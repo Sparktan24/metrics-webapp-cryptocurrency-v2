@@ -7,10 +7,8 @@ const CoinsDetail = () => {
   const { coinsList } = useSelector((store) => store.coins);
   const activeCoin = coinsList.filter((coin) => coin.display);
   const coin = activeCoin[0];
-  //  return console.log(activeCoin);
 
   if (!coin) {
-    // If there is no active coin, redirect to the homepage
     return <Navigate to="/HomePage" />;
   }
 
@@ -56,7 +54,6 @@ const CoinsDetail = () => {
             <td>
               Available Supply: &nbsp;$
               {handleFormatNumber(coin.availableSupply)}
-              {/* {(parseFloat(coin.supply).toFixed(2)).replace(/\B(?=(\d{3})+(?!\d))/g, ',')} */}
             </td>
           </tr>
           <tr>
