@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavBar render correctly 1`] = `
+<nav
+  class="nav-bar"
+>
+  <div
+    class="nav-div"
+  >
+    <a
+      class=""
+      href="/HomePage"
+    >
+      <img
+        alt="back arrow"
+        class="backArrow"
+        src="back_arrow.png"
+      />
+    </a>
+  </div>
+  <span
+    class="nav-bar-title"
+  >
+    Top Cryptocurrencies
+  </span>
+</nav>
+`;

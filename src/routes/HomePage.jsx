@@ -63,7 +63,7 @@ const HomePage = () => {
           className="search-bar"
           type="text"
           onChange={(e) => setSearchCoin(e.target.value)}
-          placeholder="Search for a cryptocurrency"
+          placeholder="Search crypto by name"
           value={searchCoin}
         />
       </div>
