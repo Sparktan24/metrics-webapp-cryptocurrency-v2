@@ -33,7 +33,7 @@ const CoinsDetail = () => {
           <tr>
             <td>
               Current Price: &nbsp;$
-              {coin.price}
+              {handleFormatNumber(coin.price)}
               &nbsp;
               {handleFormatNumber(coin.priceChange1d)}
               % last 24Hrs
@@ -73,6 +73,7 @@ const CoinsDetail = () => {
           </tr>
         </tbody>
       </table>
+      <img src={coin.icon} className="image-details" alt="bitcoin logo" />
     </div>
   );
 };

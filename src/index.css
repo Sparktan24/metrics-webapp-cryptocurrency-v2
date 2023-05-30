@@ -54,6 +54,7 @@ body {
   display: flex;
   align-items: center;
   padding-left: 1rem;
+  gap: 1rem;
 }
 
 .nav-bar a {
@@ -68,7 +69,7 @@ body {
 
 .nav-bar-title {
   display: table;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   text-transform: uppercase;
 }
 
@@ -89,6 +90,8 @@ body {
   align-items: center;
   height: 10rem;
   position: relative;
+  border: 2px solid white;
+  border-radius: 15px;
   /* min-width: fit-content; */
 }
 
@@ -181,7 +184,7 @@ body {
 
 .image-details {
   height: 22rem;
-  filter: brightness(67%) saturate(100%) hue-rotate(194deg);
+  /* filter: brightness(67%) saturate(100%) hue-rotate(194deg); */
   width: 22rem;
 }
 
@@ -193,6 +196,11 @@ body {
 .coin-logo {
   height: 4rem;
   width: 4rem;
+}
+
+.not-found {
+  color: #fc2929;
+  font-size: 1.5rem;
 }
 
 .footer {
