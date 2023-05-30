@@ -29,7 +29,7 @@ export const coinsSlice = createSlice({
     filterCoin: (state, { payload }) => {
       //  console.log(payload);
       const id = payload;
-      const newState = state.coinsList.coins.map((coin) => {
+      const newState = state.coinsList.map((coin) => {
         if (coin.id === id) return { ...coin, display: true };
         return coin;
       });
@@ -68,7 +68,7 @@ export const coinsSlice = createSlice({
   extraReducers: (builder) => {
     builder.addCase(getCoins.fulfilled, (state, action) => {
       //  console.log(action.payload.data);
-      const newState = { ...state, coinsList: action.payload };
+      const newState = { ...state, coinsList: action.payload.coins };
       //  const test = state.coinsList;
       //  console.log(test);
       return newState;

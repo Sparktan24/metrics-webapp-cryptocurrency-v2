@@ -8,17 +8,17 @@ import rightArrow from '../styles/arrow_circle_right.png';
 const HomePage = () => {
   const dispatch = useDispatch();
   const { coinsList } = useSelector((store) => store.coins);
-  const { coins } = coinsList;
-  //  console.log(coinsList.coins);
+  //  const { coins } = coinsList;
+  //  console.log(coinsList);
 
   if (coinsList.length === 0) {
     return <div>Loading</div>;
   }
   return (
-    <div>
+    <div className="home-page-wrapper">
       <main>
-        <ul>
-          {coins.map((coin) => (
+        <ul className="grid-container">
+          {coinsList.map((coin) => (
             <li key={coin.id} className="li-home-page">
               <img className="right-arrow" src={rightArrow} alt="arrow pointing to right" />
               <NavLink

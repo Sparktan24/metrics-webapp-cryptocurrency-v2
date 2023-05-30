@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable arrow-body-style */
 import { useSelector } from 'react-redux';
 import { Navigate } from 'react-router-dom';
@@ -6,7 +7,7 @@ const CoinsDetail = () => {
   const { coinsList } = useSelector((store) => store.coins);
   const activeCoin = coinsList.filter((coin) => coin.display);
   const coin = activeCoin[0];
-  //  return console.log(coin);
+  //  return console.log(activeCoin);
 
   if (!coin) {
     // If there is no active coin, redirect to the homepage
