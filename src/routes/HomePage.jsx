@@ -55,14 +55,19 @@ const HomePage = () => {
 
   return (
     <>
-      <div>
+      <div className="search-bar-container">
+        <h1>
+          Search your crypto here
+        </h1>
         <input
+          className="search-bar"
           type="text"
           onChange={(e) => setSearchCoin(e.target.value)}
           placeholder="Search for a cryptocurrency"
           value={searchCoin}
         />
       </div>
+      <h3 className="coins-header">Crypto by rank</h3>
       {result()}
 
       <div className="home-page-wrapper">

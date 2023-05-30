@@ -10,6 +10,7 @@ body {
   margin: 0;
   padding: 0;
   color: #fbfcfd;
+  background-color: #7fb0ec;
 }
 
 .btn {
@@ -90,7 +91,7 @@ body {
   align-items: center;
   height: 10rem;
   position: relative;
-  border: 2px solid white;
+  border: 2px solid #7fb0ec;
   border-radius: 15px;
   /* min-width: fit-content; */
 }
@@ -201,6 +202,27 @@ body {
 .not-found {
   color: #fc2929;
   font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.search-bar-container {
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0 5rem;
+}
+
+.search-bar {
+  border: none;
+  border-radius: 5px;
+  height: 1.5rem;
+}
+
+.coins-header {
+  text-align: center;
+  background-color: #35548b;
+  margin: 1rem 0;
 }
 
 .footer {
