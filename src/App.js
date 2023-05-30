@@ -3,7 +3,6 @@ import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import { getCoins } from './redux/coins/coinsSlice';
-import './App.css';
 import NavBar from './components/NavBar';
 import HomePage from './routes/HomePage';
 import CoinsDetail from './routes/CoinsDetail';

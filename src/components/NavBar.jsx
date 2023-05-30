@@ -12,7 +12,6 @@ const NavBar = () => {
         <NavLink to="/HomePage" onClick={() => dispatch(resetCoins())}>
           <img src={backArrow} className="backArrow" alt="back arrow" />
         </NavLink>
-        {/* <NavLink to="/CoinsDetail">CoinDetails</NavLink> */}
       </div>
       <span className="nav-bar-title">Top Cryptocurrencies</span>
     </nav>
