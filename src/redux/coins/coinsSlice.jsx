@@ -66,7 +66,8 @@ export const coinsSlice = createSlice({
   },
   extraReducers: (builder) => {
     builder.addCase(getCoins.fulfilled, (state, action) => {
-      const newState = { ...state, coinsList: action.payload.data };
+      //  console.log(action.payload.data);
+      const newState = { ...state, coinsList: action.payload };
       //  const test = state.coinsList;
       //  console.log(test);
       return newState;
