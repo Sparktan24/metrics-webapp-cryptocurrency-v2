@@ -27,8 +27,9 @@ export const coinsSlice = createSlice({
   initialState,
   reducers: {
     filterCoin: (state, { payload }) => {
+      //  console.log(payload);
       const id = payload;
-      const newState = state.coinsList.map((coin) => {
+      const newState = state.coinsList.coins.map((coin) => {
         if (coin.id === id) return { ...coin, display: true };
         return coin;
       });
