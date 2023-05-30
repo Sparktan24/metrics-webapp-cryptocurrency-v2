@@ -89,7 +89,7 @@ body {
   align-items: center;
   height: 10rem;
   position: relative;
-  min-width: fit-content;
+  /* min-width: fit-content; */
 }
 
 .li-home-page a {
@@ -97,6 +97,9 @@ body {
   padding: 1rem;
   font-size: 1.2rem;
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .right-arrow {
@@ -180,6 +183,16 @@ body {
   height: 22rem;
   filter: brightness(67%) saturate(100%) hue-rotate(194deg);
   width: 22rem;
+}
+
+.loading {
+  color: black;
+  font-size: 2rem;
+}
+
+.coin-logo {
+  height: 4rem;
+  width: 4rem;
 }
 
 .footer {

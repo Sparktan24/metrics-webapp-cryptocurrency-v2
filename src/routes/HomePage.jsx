@@ -12,7 +12,7 @@ const HomePage = () => {
   //  console.log(coinsList);
 
   if (coinsList.length === 0) {
-    return <div>Loading</div>;
+    return <div className="loading">Loading...</div>;
   }
   return (
     <div className="home-page-wrapper">
@@ -25,13 +25,13 @@ const HomePage = () => {
                 to="/CoinsDetail"
                 onClick={() => dispatch(filterCoin(coin.id))}
               >
+                <img className="coin-logo" src={coin.icon} alt="coin logo" />
                 Rank:
                 {coin.rank}
                 <br />
                 <span className="home-coin-name">
                   {coin.name}
                 </span>
-                <br />
                 Price:
                 $
                 {parseFloat(coin.price).toFixed(2)}
