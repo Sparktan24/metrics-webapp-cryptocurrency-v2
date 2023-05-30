@@ -184,9 +184,10 @@ body {
 }
 
 .image-details {
-  height: 22rem;
+  height: 18rem;
   /* filter: brightness(67%) saturate(100%) hue-rotate(194deg); */
-  width: 22rem;
+  width: 18rem;
+  align-self: center;
 }
 
 .loading {
