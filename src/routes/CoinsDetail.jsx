@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-const CoinsDetail = () => {
-  return (
-    <div>CoinsDetail</div>
-  )
-}
+const CoinsDetail = () => (
+  <div>CoinsDetail</div>
+);
 
-export default CoinsDetail
+export default CoinsDetail;
